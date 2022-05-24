@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>PakiMemo - Armazenamento de Dados</title>
+    <base target="_blank" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lora|Rubik">
+    <link rel="stylesheet" type="text/css" href="PakiMemo.css" />
+</head>
+<body>
+    <header>
+        <address class="ender">
+        Rua do Paço do Elefantinho, 123<br/>
+        Tel: (21) 4321-5678<br/>
+        <a href="mailto:contato@paquiderme.com.br">
+        contato@paquiderme.com.br</a></a></address>
+        <img class="imgLogo" src="Imagens/PakiLogoTopo.png"/></span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="2_PakiMemo.html">INICIAL</a></li>
+            <li><a href="3_Memorias.html">MEMÓRIAS</a></li>
+            <li><a href="4_Discos.html">HDs / SSDs</a></li>
+            <li><a href="5_Cadastro.html">CADASTRO</a></li>
+            <li><a href="6_Compras.html">COMPRAS</a></li></li>
+        </ul>
+        </ul>
+    </nav>
+    <section><br/>
+        <table class="tabDisco">
+            <tr>
+                <th colspan="5" class="titulo">HDs e SSDs Internos</th>
+            </tr>
+            <tr>
+                <th class="linTH">Tipo/Interface</th>
+                <th class="linTH">Fabricante</th>
+                <th class="linTH">Descrição</th>
+            </tr>
+            <tr><th rowspan="2" class="colTH">
+            HD Sata III</th>
+            <td>
+                <a target="_self" href="javascript:Mostra(1);"> Western Digital</a>
+            </td>
+            <th rowspan="6">
+                <img id="imgDes" class="imgJan" src="Imagens/vazio.jpg"> <div id="prcDes" class="preco">&nbsp;</div>
+            </th>
+            <tr>
+                <td><a target="_self" href="javascript:Mostra(2);"> Seagate</a></td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="colTH">
+                SSD Sata III</th>
+                <td> 
+                    <a target="_self" href="javascript:Mostra(3);">Samdisk</a>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <a target="_self" href="javascript:Mostra(4);">Kingston</a>
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="colTH">
+                     M2</th>
+                    <td> <a target="_self" href="javascript:Mostra(5);">Kingston</a></td>
+            </tr>
+            <tr>
+                <td> <a target="_self" href="javascript:Mostra (6);"> Western Digital</a></td>
+            </tr>
+        </table>
+    </section>
+        <script>
+            var tabProdutos = [
+            ["vazio", 0],
+            ["HD_WD_500gb_70", 170],
+            ["HD_Seagate_1Tb_70", 350],
+            ["SSD_Samdisk_480Gb_70", 380],
+            ["Mem_Kingston_4gb_200", 700],
+            ["SSD_Kingston_960Gb_70", 410],
+            ["SSD_WD_M2_240Gb_70", 270] ];
+            function Mostra(ind) {
+            var foto = document.getElementById("imgDes");
+            var prec = document.getElementById("prcDes");
+            foto.src = "Imagens/" + tabProdutos[ind][0] + ".jpg";
+            prec.innerHTML = "<br/>Preço: R$ " +
+            tabProdutos[ind][1] + ",00";
+            }
+        </script>
+</body>
+</html>

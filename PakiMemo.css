@@ -1,0 +1,254 @@
+/*
+* Estilo Seções
+*/
+header {
+    display:block;
+    margin-bottom: 1px;
+   }
+   nav {
+    display:block;
+    width: 18%;
+    float: left;
+    margin-right: 10px;
+    font-family: Rubik, Verdana, sans-serif;
+   }
+   section {
+    display:block;
+    width: 70%;
+    float: right;
+   }
+   /*
+   * Estilo Geral
+   */
+   body {
+    color: #EEEE22;
+    font-size: 16px;
+    background-color: #116688;
+    font-family: Lora, Georgia, serif;
+   }
+
+  
+   ol { line-height: 200%; }
+   ul { line-height: 200%; }
+   /*
+   * Estilo Nav
+   */
+   nav ul {
+    color: #FFDD22;
+    margin-top: 40px;
+    line-height: 230%;
+    list-style-type: square;
+   }
+   nav ul a:link { color:#FFFF22; text-decoration:none; }
+   nav ul a:visited { color:#DDDD22; text-decoration:none; }
+   /*
+   * Estilo Header
+   */
+   .ender {
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+   }
+   img.imgLogo {
+    padding-bottom: 5px;
+    border-bottom: 3px solid;
+    margin-bottom: 4px;
+   }
+   header a:visited{
+    color:#FFFF22; text-decoration:none;
+   }
+   header a:link{
+    color:#FFFF22; text-decoration:none;
+   }
+   /***************************************
+   * Estilo Seção Apresentação
+   */
+   div.apres {
+    text-align: center;
+    font-size: 18px;
+   }
+   /***************************************
+* Estilo Seção Memórias
+*/
+    .Titulo {
+    text-align: center;
+   }
+
+   .listaMemo {
+    color: #AA0000;
+    width: 340px;
+    border: 4px solid #000055;
+    margin: 0px auto 10px auto;
+    padding: 10px 10px 10px 50px;
+    background-color: #EEEEEE;
+    list-style-type: decimal;
+    font-family: Rubik, verdana, sans-serif;
+    
+   }
+   ol > li > a:link{
+    color: #005599;
+    text-decoration: none;
+    }
+    ol > li > a:visited{
+    color: #005599;
+    text-decoration: none;
+    }
+  
+
+   
+   .preco {
+    color: #EE0000;
+    font-weight: bold;
+    vertical-align: middle;
+   }
+   /***************************************
+* Estilo Seção Discos
+*/
+.tabDisco {
+    color: #000066;
+    font-size: 14px;
+    margin: 6px auto 10px auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    font-family: Rubik, verdana, sans-serif;
+   }
+   .tabDisco td, .tabDisco th {
+    border: 3px solid #226699;
+    padding: 6px 12px 6px 12px;
+   }
+   .tabDisco .titulo {
+    color: #FFFF00;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #229955;
+   }
+   .tabDisco .linTH {
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #22BB66;
+   }
+   .tabDisco .colTH {
+    color: #FFFFFF;
+    text-align: left;
+    background-color: #2299DD;
+   }
+   .imgDisco {
+    width: 70px;
+    height: 70px;
+   }
+   #imgDes{
+       width: 100px;
+       height: 100px;
+       border: 2px solid #226699;
+       padding: 2px;
+       background-color: white;
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+   #prcDes {
+       height: 100px;
+   }
+   #titDes{
+       height: 60px;
+   }
+   .tabDisco > a:link{
+    color: #005599;
+    text-decoration: none;
+   } 
+   .tabDisco > a:visited{
+    color: #005599;
+    text-decoration: none;
+   } 
+   /***************************************
+* Estilo dos Formulários
+*/
+.FormBox {
+    width: 520px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #33BBBB;
+    border: 3px solid #EEEE22;
+   }
+   /*** Fieldsets ***/
+   .FSLinInteira {
+    color: white;
+    width: 490px;
+    text-align: left;
+   }
+   .FSColEsq {
+    width: 210px;
+    float: left;
+    text-align: center;
+   }
+   .FSColDir {
+    width: 210px;
+    float: right;
+    text-align: center;
+   }
+   .LinhaForm {
+    margin: 0px;
+    height: 30px;
+    padding: 6px 3px 0px 3px;
+   }
+   .ColEsq {
+    width: 180px;
+    float: left;
+    display: block;
+   }
+   .ColDir {
+    width: 180px;
+    float: right;
+    display: block;
+   }
+   .LabBox {
+    width: 80px;
+    float: left;
+    display: block;
+   }
+   .InpBoxGnd {
+    width: 384px;
+    float: right;
+    display: block;
+   }
+   .InpBoxMed {
+    width: 80px;
+    float: right;
+    display: block;
+   }
+   .numDD { width:35px; }
+   .numQD { width:50px; }
+   .botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;}
+
+   /* aqui vai uns estilo a mais do que foi pedido, apenas para dar uma aparencia */
+    pre > img{
+        padding-left: 100px;
+        
+    }
+    pre > p{
+        padding-left: 100px;
+        font-family: Lora;
+    }
+    .centra{
+        padding-left: 150px;
+        
+    }
+    .bt{
+        margin-left: 150px;
+        background-color: #DDDD22;
+        color: #005599;
+        font-weight: bold;
+        border: none;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .bt:hover{
+        box-shadow: 2px 2px black;
+        color: black;
+    }

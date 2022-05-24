@@ -1,0 +1,62 @@
+/*
+* Estilo Seções
+*/
+header {
+    display:block;
+    margin-bottom: 1px;
+   }
+   nav {
+    display:block;
+    width: 18%;
+    float: left;
+    margin-right: 10px;
+    font-family: Rubik, Verdana, sans-serif;
+   }
+   section {
+    display:block;
+    width: 70%;
+    float: right;
+   }
+   /*
+   * Estilo Geral
+   */
+   body {
+    color: #EEEE22;
+    font-size: 16px;
+    background-color: #116688;
+    font-family: Lora, Georgia, serif;
+   }
+   a:link { color:#FFFF22; text-decoration:none; }
+   a:visited { color:#DDDD22; text-decoration:none; }
+   ol { line-height: 200%; }
+   ul { line-height: 200%; }
+   /*
+   * Estilo Nav
+   */
+   nav ul {
+    color: #FFDD22;
+    margin-top: 40px;
+    line-height: 230%;
+    list-style-type: square;
+   }
+   /*
+   * Estilo Header
+   */
+   .ender {
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+   }
+   img.imgLogo {
+    padding-bottom: 5px;
+    border-bottom: 3px solid;
+    margin-bottom: 4px;
+   }
+   /***************************************
+   * Estilo Seção Apresentação
+   */
+   div.apres {
+    text-align: center;
+    font-size: 18px;
+   }

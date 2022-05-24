@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <title>PakiMemo - Armazenamento de Dados</title>
+    <base target="_blank" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lora|Rubik">
+    <link rel="stylesheet" type="text/css" href="PakiMemo.css" />
+    <style>
+        #loginCad { width: 260px; }
+        #idEmail { width: 160px; }
+        #senhaCad { width: 180px; }
+        #lisSelProd { width: 370px; }
+        #selProduto { width: 75%; }
+        #btnIncluir { width: 70px; }
+        #boxPedidos { height: 100px; }
+        #lisPedArea {
+        height: 90%;
+        width: 100%;
+        }
+        #fSBandeira {
+        width: 80px;
+        text-align: left;
+        }
+        #numCartao {
+        width: 350px;
+        height: 35px;
+        padding-top: 10px;
+        }
+        #valCartao { width: 230px; height: 35px; }
+        #boxParcel { width: 230px; height: 30px; }
+    </style>
+</head>
+<body>
+<header>
+<address class="ender">
+ Rua do Paço do Elefantinho, 123<br/>
+ Tel: (21) 4321-5678<br/>
+ <a href="mailto:contato@paquiderme.com.br">
+ contato@paquiderme.com.br</a></a></address>
+<img class="imgLogo" src="Imagens/PakiLogoTopo.png"/></span>
+</header>
+<nav>
+<ul><li><a href="2_PakiMemo.html">INICIAL</a></li>
+ <li><a href="3_Memorias.html">MEMÓRIAS</a></li>
+ <li><a href="4_Discos.html">HDs / SSDs</a></li>
+ <li><a href="5_Cadastro.html">CADASTRO</a></li>
+ <li><a href="6_Compras.html">COMPRAS</a></li></li></ul>
+</ul>
+</nav>
+<section>
+    <div class="FormBox">
+    <h3 class="Titulo">Compras</h3>
+    <form method="POST">
+    <fieldset class="FSLinInteira">
+    <legend>Identificação</legend>
+    <div class="LinhaForm">
+    <span class="ColEsq" id="loginCad">
+    <label for="idEmail" class="LabBox">E-mail:</label>
+    <input type="email" class="InpBoxGnd"
+     id="idEmail" name="TxtEmail" required /></span>
+    <span class="ColDir" id="senhaCad">
+    <label for="idSenha" class="LabBox">Senha:</label>
+    <input id="idSenha" class="InpBoxMed"
+     type="password" name="TxtSenha" required /></span>
+    </div>
+    <div class="LinhaForm">
+    <b><i>Se você ainda não tem cadastro clique
+    <a href="5_Cadastro.html">aqui</a></i></b>!</div>
+    </fieldset>
+    <fieldset class="FSLinInteira">
+    <legend> Lista de Compras&nbsp;</legend>
+    <div class="LinhaForm">
+    <span class="ColEsq" id="lisSelProd">
+    <label for="idEmail" class="LabBox">Produtos: </label>
+    <Select name="selProduto" id="selProduto" >
+    <option> ----- </option>
+    <optgroup label="Memória DDR3">
+     <option>Kingston 4Gb</option>
+     <option>Samsung 8Gb</option></optgroup>
+    <optgroup label="Memória DDR4">
+     <option>Kingston Fury 8Gb</option>
+     <option>Corsair Vengeance 8GB</option></optgroup>
+    <optgroup label="HD Sata III ">
+     <option>Western Digital 500 Gb</option>
+     <option>Seagate 1 Tb</option></optgroup>
+    <optgroup label="SSD Sata III ">
+     <option>Samdisk 480 Gb</option>
+     <option>Kingston 960 Gb </option>></optgroup>
+    <optgroup label="SSD M2">
+     <option>Kingston 500 Gb </option>
+     <option>Western Digital 240 Gb</option></optgroup>
+    </select>
+    </span>
+    <span class="ColDir" id="btnIncluir">
+    <input type="button" value="Incluir" id="incl" onclick="IncluiLista( this.form.selProduto);"/>
+    </span>
+    </div>
+    <div class="LinhaForm" id="boxPedidos">
+    <textarea name="listaPedidos" readonly
+     id="lisPedArea">
+    </textarea>
+    </div>
+    <div class="LinhaForm">
+    <span class="ColDir">
+    <label class="LabBox" for="TxtTotal">Valor: R$</label>
+    <input type="text" name="TxtTotal" readonly
+     id="TxtTotal" class="InpBoxMed" /></span></div>
+    </fieldset>
+    <fieldset class="FSLinInteira">
+    <legend> Dados do Cartão&nbsp;</legend>
+    <fieldset class="FSColDir" id="fSBandeira">
+    <legend> Bandeira:</legend>
+    <label><input type="radio" name="RadBand"
+     checked />Visa</label><br/>
+    <label><input type="radio" name="RadBand" />Master</label><br/>
+    <label><input type="radio" name="RadBand" />Elo</label>
+    </fieldset>
+    <div class="ColEsq" id="numCartao">
+    <label class="LabBox" for="TxtNumCC01">Número:</label>
+    <input type="text" name="TxtNumCC01"
+     id="TxtNumCC01" maxlength="4"
+     class="numDD" />&nbsp;
+    <input type="text" name="TxtNumCC02"
+     class="numDD" maxlength="4" />&nbsp;
+    <input type="text" name="TxtNumCC03"
+     class="numDD" maxlength="4" /> &nbsp;
+    <input type="text" name="TxtNumCC04"
+     class="numDD" maxlength="4" />
+    </div>
+    <div class="ColEsq" id="valCartao">
+    <label class="LabBox" for="mesVal">Validade:</label>
+    <input type="number" name="TxtMesVal" id="mesVal"
+     min="1" max="12" class="numDD" value="1" /> /
+    <input type="number" name="TxtAnoVal" value="2022"
+     min="2022" max="2036" class="numQD" /></div>
+    <div class="ColEsq" id="boxParcel">
+    <label class="LabBox" for="numParcel">Parcelas:</label>
+    <input type="number" name="TxtMesVal" id="numParcel"
+     min="1" max="6" class="numDD" value="1" />
+     x Sem Juros</div>
+    </fieldset>
+    <div class="botoes">
+     <input type="submit" value="Confirmar" />
+     <input type="reset" value="Limpar" />
+    </div>
+    </div>
+    </section>
+    <script>
+        /*
+        * Lista de Compras
+        */
+        var tabPrcProd = [ 0, 200, 190, 298, 245, 170, 350, 380, 700, 410, 270
+        ];
+        
+        function IncluiLista( sel ) {
+        var prod = sel.selectedIndex;
+        if ( prod != 0 ) {
+        var prc = tabPrcProd[prod];
+        sel.selectedIndex = 0;
+        with ( sel.form ) {
+        listaPedidos.value += sel.options[prod].text + '\n';
+        TxtTotal.value = prc + Number(TxtTotal.value);
+        }
+        }
+        else
+        alert("Nenhum Produto selecionado!");
+        }
+        </script>
